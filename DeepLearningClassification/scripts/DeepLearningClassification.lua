@@ -1,24 +1,3 @@
---[[----------------------------------------------------------------------------
-
-  Application Name:
-  DeepLearningClassification
-                                                                                             
-  Summary:
-  Classifying images using a deep neural network trained in dStudio[1].
-  This sample app contains a trained network, and sample images of the dataset
-  'SolderJoint' as described in the Support Portal tutorial [2].
-   
-  How to Run:
-  Starting this sample is possible either by running the app (F5) or
-  debugging (F7+F10). Setting breakpoint on the first row inside the 'main'
-  function allows debugging step-by-step after 'Engine.OnStarted' event.
-  
-  More Information:
-  [1] https://dstudio.cloud.sick.com/
-  [2] Tutorial "dStudio - A step by step example".
-
-------------------------------------------------------------------------------]]
-
 
 local function runInference(dnn, image, image_path)
   dnn:setInputImage(image) -- Prepare image for prediction

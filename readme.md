@@ -1,5 +1,4 @@
 ## DeepLearningClassification
-
 Example showing the use of a pretrained classification network.
 See also the available tutorials on the [SICK support portal](https://supportportal.sick.com/).
 
@@ -17,7 +16,7 @@ required. For example SIM1012 with latest firmware. Alternatively the Emulator
 in AppStudio 3.0 or higher can be used.
 
 ### More Information
-Tutorial "Algorithms - Deep Learning"
+Tutorial "Algorithms - Deep Learning" or under "https://dstudio.cloud.sick.com/"
 
 ### Topics
 Algorithm, Image-2D, Machine-Learning, Deep-Learning, Neural-Network, Sample, SICK-AppSpace
