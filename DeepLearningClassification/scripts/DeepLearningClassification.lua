@@ -1,4 +1,7 @@
 
+---@param dnn MachineLearning.DeepNeuralNetwork
+---@param image Image
+---@param image_path string
 local function runInference(dnn, image, image_path)
   dnn:setInputImage(image) -- Prepare image for prediction
   local result = dnn:predict() -- Run prediction using the trained network
@@ -19,9 +22,7 @@ local function runInference(dnn, image, image_path)
   local pass = predicted_class_idx > 0
   local g = pass and 255 or 0
   local r = pass and 0 or 255
-  local textDecoration = View.TextDecoration.create()
-  textDecoration:setPosition(5, 12)
-  textDecoration:setColor(r, g, 0)
+  local textDecoration = View.TextDecoration.create():setPosition(5, 12):setColor(r, g, 0)
 
   -- Display the image
   local viewer = View.create()
